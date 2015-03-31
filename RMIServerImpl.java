@@ -254,34 +254,6 @@ public class RMIServerImpl extends UnicastRemoteObject implements RMIServer , RM
 		}
 		System.out.println("Peer Connections Built Successfully");
 	};
-
-	/*public static void buildPeerConnections(){
-		System.out.println("Building Peer Connections");
-		int i =0 ; 
-		peers = new RMIBroadcastServer[numPeers];
-		for (i =0 ; i < numPeers ;i++){
-			if(i == id - 1) continue;
-			while(true){
-				try{
-					peers[i] = (RMIBroadcastServer) Naming.lookup ("//" + peerInfo[i] + "/RMIBroadcastServer");
-				}catch(Exception e){
-					System.out.println("Failed to connect to server of id "+ (i+1) +" with "+e);
-					System.out.println("Retry in 10 seconds");
-					try{
-						Thread.sleep(1000);
-					}catch(Exception e2){
-
-					}finally{
-						continue;
-					}
-					
-				}
-				break;
-			}
-
-		}
-		System.out.println("Peer Connections Built Successfully");
-	};*/
 	
 	public void executeRequest(Request r,int pid) throws RemoteException{
 		writeLog(pid+" Process  "+calendar.getTime()+" "+r.timestamp);
