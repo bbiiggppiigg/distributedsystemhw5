@@ -6,5 +6,9 @@ public class NewAccountResponse extends Response{
 	public NewAccountResponse(String status,int accountId){
 		super(status);
 		this.accountId = accountId;
+		responseType = "NewAccount";
+	}
+	public String toString(){
+		return responseType+ " status = "+status+" accountId = "+accountId;
 	}
 }

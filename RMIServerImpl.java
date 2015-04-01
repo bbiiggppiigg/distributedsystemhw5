@@ -55,9 +55,6 @@ public class RMIServerImpl extends UnicastRemoteObject implements RMIServer , RM
 		}
 	};
 
-
-
-
 	public synchronized void writeLog(String content) {
 		try{
 		FileWriter fw = new FileWriter(filename+id,true);
@@ -218,7 +215,7 @@ public class RMIServerImpl extends UnicastRemoteObject implements RMIServer , RM
 					peers[id] = (RMIBroadcastServer) Naming.lookup ("//" + peerInfo[id] + "/RMIBroadcastServer");
 				}catch(Exception e){
 					System.out.println("Failed to connect to server of id "+ (id+1) +" with "+e);
-					System.out.println("Retry in 10 seconds");
+					System.out.println("Retry in 1 seconds");
 					try{
 						Thread.sleep(1000);
 					}catch(Exception e2){
@@ -410,7 +407,7 @@ public class RMIServerImpl extends UnicastRemoteObject implements RMIServer , RM
 		/*
 			Start Multiple Threads to Broadcast the Request to All Replicated Systems
 		*/
-		//System.out.println("Broadcasting "+r);
+
 		for ( i =0 ;i < numPeers ; i++){
 			if(i== id-1) continue;
 			bct[i]= new BCastThread(i,r,id); 
@@ -429,7 +426,6 @@ public class RMIServerImpl extends UnicastRemoteObject implements RMIServer , RM
 			if(i== id-1) continue;
 			setLamportClock(bct[i].getTimestamp());
 		}
-
 		//writeLog(id+" SERVER-ACK "+calendar.getTime()+" "+ r);
 		
 
@@ -477,21 +473,17 @@ public class RMIServerImpl extends UnicastRemoteObject implements RMIServer , RM
 		synchronized(pq){
 			while(pq.size()!=0 && pq.peek().compareTo(t)<0){
 				try{
-					//System.out.println("BCast Waiting " +r.timestamp);
 					pq.wait();
 				}catch(InterruptedException e){
 					e.printStackTrace();
 				}
 			}
 		}
-		writeLog(pid+" ACK-ING  "+calendar.getTime()+" "+r);
+		//writeLog(pid+" ACK-ING  "+calendar.getTime()+" "+r);
 		return tempClock;
 	}
 
 	class InitialThread extends Thread{
-		InitialThread(){
-
-		}
 		public void run(){
 			try{
 				NewAccountResponse resp =(NewAccountResponse) submitRequest(new NewAccountRequest("p","a","b"));
@@ -502,6 +494,7 @@ public class RMIServerImpl extends UnicastRemoteObject implements RMIServer , RM
 		}
 	}
 	public void initialization(){
+		System.out.println("Start of Initialization");
 		InitialThread its[] = new InitialThread[1000];
 		int i;
 			for(i=0;i<10;i++){

@@ -16,16 +16,27 @@ import Responses.*;
 
 public class ClientE  extends Thread{
     protected static Thread threads[];
-    public static int accounts[] = new int[100];
     protected static int iterationCount;
-    public static RMIServer server;
+    public RMIServer server;
     public static String [] peerInfo ;
     public final String filename= "clientLogfile";
     public static int numPeers;
+    public int server_id;
+    public static Calendar calendar = Calendar.getInstance();
+    ClientE(int id){
+        server_id = id;
+        try{
+            server = (RMIServer) Naming.lookup ("//" + peerInfo[server_id] + "/RMIServer");
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+    
+    }
+
     public synchronized void writeLog(String content){
         try{
-            FileWriter fw = new FileWriter(filename,true);
-            fw.write("Thread ID:"+Thread.currentThread().getId()+" "+content+"\n");
+            FileWriter fw = new FileWriter(filename+server_id,true);
+            fw.write(content+"\n");
             fw.close();
         }catch(IOException e){
             e.printStackTrace();
@@ -48,74 +59,48 @@ public class ClientE  extends Thread{
       } 
     }
     public void run(){
+
+        /*Each client thread will perform the following operations 100 times and terminate.
+        􏰀 It will randomly pick two accounts and transfer 10 from one account to the other.
+        􏰀 It will write to the client logfile a record indicating the operation request and server process
+        ID.
+        ID “REQ” Physical-clock-time Operation-name Parameters
+        􏰀 It will also write a log record when a response is received. ID “RSP” Physical-clock-time Response status
+*/
         try{
             int i;
             Random rand = new Random();
           
-            for(i=0;i<iterationCount;i++){
-                int  n1 = rand.nextInt(100),n2;
+            for(i=0;i<100;i++){
+                int  n1 = rand.nextInt(10)+1,n2;
                 do{
-                    n2 = rand.nextInt(100);
+                    n2 = rand.nextInt(10)+1;
                 }while(n2==n1);
-                
-                TransferResponse  tr = server.transfer(new TransferRequest(accounts[n1],accounts[n2],10));
-                
-                if(!tr.status.equals("OK")){
-                  writeLog("Respone = "+tr.status+" from account :"+n1+" to account :"+n2);
-                }
+                Request r = new TransferRequest(n1,n2,10);
+                writeLog((server_id+1)+ " REQ "+calendar.getTime()+" "+r);
+                TransferResponse  tr = (TransferResponse) server.submitRequest(r);
+                writeLog((server_id+1)+ " RSP "+calendar.getTime()+" "+tr);
             }
         }catch(RemoteException e){
             e.printStackTrace();
         }
     }
-    public static int getTotalBalance() throws RemoteException{
-        int i,total =0 ;
-        for ( i =0; i < 100; i++){
-            total = total +  ((GetBalanceResponse) server.submitRequest(new GetBalanceRequest(accounts[i]))).balance;
-        }
-        return total;
-    }
+
     public static void main (String args[]) throws Exception {
-        if (args.length != 3)
+        if (args.length != 1)
             throw new RuntimeException ("Syntax: ClientB <hostname> 100 10");
-        //System.setSecurityManager (new RMISecurityManager ());
         int i;
-        int threadcount = Integer.parseInt(args[1]);
-        iterationCount = Integer.parseInt(args[2]);
-        threads = new Thread[threadcount];
-
-        server = (RMIServer) Naming.lookup ("//" + args[0] + "/RMIServer");
-        
-        System.out.println("Step 1:");
-        for(i =0 ;i < 100; i++){
-            accounts[i] = ( (NewAccountResponse)server.submitRequest(new NewAccountRequest("person1","a","b"))).accountId;       
+        readFileByLine(args[0]);
+        ClientE clients [] = new ClientE[numPeers];
+        Random rand = new Random();
+        for(i =0 ; i < numPeers ;i ++){
+            clients[i] = new ClientE(i);
+            clients[i].start();
         }
-        
-        System.out.println("Step 2:");
-        for(i=0;i < 100; i++){
-            server.submitRequest(new DepositRequest(accounts[i],100));
+        for(i =0 ; i < numPeers ;i ++){
+            clients[i].join();
         }
-        
-        System.out.println("Step 3:");
-        int total = getTotalBalance();
-        System.out.println("Total Amount = "+total);
-    
-
-        System.out.println("Step 4:");
-        for(i=0;i<threadcount;i++){
-            threads[i] = new ClientD();
-            threads[i].start();
-        }
-        System.out.println("Step 5:");
-        
-        for(i=0;i<threadcount;i++){
-            threads[i].join();
-        }
-    
-        System.out.println("Step 6:");
-        total = getTotalBalance();
-        System.out.println("Total Amount = "+total);
-    
+        clients[0].server.submitRequest(new HaltRequest());
 
     }
 }
