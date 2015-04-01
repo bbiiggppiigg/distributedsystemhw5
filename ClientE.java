@@ -35,7 +35,7 @@ public class ClientE  extends Thread{
 
     public synchronized void writeLog(String content){
         try{
-            FileWriter fw = new FileWriter(filename+server_id,true);
+            FileWriter fw = new FileWriter("logs/"+filename+(server_id+1),true);
             fw.write(content+"\n");
             fw.close();
         }catch(IOException e){

@@ -57,7 +57,7 @@ public class RMIServerImpl extends UnicastRemoteObject implements RMIServer , RM
 
 	public synchronized void writeLog(String content) {
 		try{
-		FileWriter fw = new FileWriter(filename+id,true);
+		FileWriter fw = new FileWriter("logs/"+filename+id,true);
      	fw.write(content+"\n");
 		fw.close();
 		}catch(IOException e){
