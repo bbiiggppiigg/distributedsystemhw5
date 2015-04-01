@@ -1,8 +1,8 @@
-
+import java.util.Map;
 
 import java.util.HashMap;
 class AccountManager{
-	private static Integer accountNum = 0 ;
+	private static Integer accountNum = 1 ;
 	private static HashMap<Integer,Account> accounts;
 	AccountManager(){
 		accounts = new HashMap<Integer,Account>();
@@ -20,9 +20,11 @@ class AccountManager{
 		return accounts.get(id);
 	}
 	public static void printAccountsBalance(){
-		int i =0 ;
-		for (i=0;i<accountNum;i++){
-				System.out.println("Account Id "+i +" Balance " +accounts.get(i).getBalance());
+		for(Map.Entry<Integer,Account> it : accounts.entrySet()){
+			System.out.println("Account Id "+it.getKey() +" Balance " +it.getValue().getBalance());
+
 		}
+
+		
 	};
 }

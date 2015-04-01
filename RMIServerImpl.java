@@ -29,9 +29,7 @@ public class RMIServerImpl extends UnicastRemoteObject implements RMIServer , RM
 		requestCount = requestCount+1;
 	//	System.out.println("RespondTime = "+respondTime+" Duration = "+duration);
 	}
-	public static void Debug(String s){
-	//	System.out.println(s);
-	}
+	
 	class Ticket implements Comparable<Ticket>{
 		public long timestamp;
 		public int pid;
@@ -47,10 +45,12 @@ public class RMIServerImpl extends UnicastRemoteObject implements RMIServer , RM
 			else if (this.timestamp < t.timestamp)
 				return -1;
 			else{
-				if(this.pid > this.pid)
-					return 1;
-				else
+				if(this.pid < t.pid)
 					return -1;
+				else if(this.pid == t.pid)
+					return 0;
+				else
+					return 1;
 			}
 		}
 	};
@@ -222,6 +222,7 @@ public class RMIServerImpl extends UnicastRemoteObject implements RMIServer , RM
 					try{
 						Thread.sleep(1000);
 					}catch(Exception e2){
+						e2.printStackTrace();
 
 					}finally{
 						continue;
@@ -249,7 +250,6 @@ public class RMIServerImpl extends UnicastRemoteObject implements RMIServer , RM
 			try{
 				pt[i].join();
 			}catch(Exception e){
-
 			}
 		}
 		System.out.println("Peer Connections Built Successfully");
@@ -280,10 +280,9 @@ public class RMIServerImpl extends UnicastRemoteObject implements RMIServer , RM
 				throw new RemoteException("Unsupported Request");	
 		}
 		
-		
-		if(pq.peek()!=null){
-			pq.peek().notify();
-		}
+		/*synchronized(pq){
+			pq.notifyAll();
+		}*/
 	};
 
 	public void halt(){
@@ -328,10 +327,10 @@ public class RMIServerImpl extends UnicastRemoteObject implements RMIServer , RM
 				throw new RemoteException("Unsupported Request");	
 		}
 		
-		pq.poll();
-		if(pq.peek()!=null)
-			pq.peek().notify();
-		
+		synchronized(pq){
+			pq.poll();
+			pq.notifyAll();
+		}
 		return ret;
 	}
 	class HaltThread extends Thread{
@@ -340,10 +339,10 @@ public class RMIServerImpl extends UnicastRemoteObject implements RMIServer , RM
 		}
 		public void run(){
 			try{
-				Thread.sleep(10000);
-				System.exit(0);
+				Thread.sleep(3000);
+				System.exit(1);
 			}catch(Exception e){
-
+				e.printStackTrace();
 			}
 		}
 	}
@@ -361,7 +360,7 @@ public class RMIServerImpl extends UnicastRemoteObject implements RMIServer , RM
 			try{
 				timestamp = peers[id].requestBCast(r,id);
 			}catch(Exception e ){
-				
+				e.printStackTrace();
 			}
 		}
 		long getTimestamp(){
@@ -381,32 +380,37 @@ public class RMIServerImpl extends UnicastRemoteObject implements RMIServer , RM
 			try{
 				peers[id].executeRequest(r,id);
 			}catch(Exception e ){
-				
+				e.printStackTrace();
 			}
 		}
 	}
+
+
 	public Response submitRequest(Request r) throws RemoteException{
 		BCastThread bct [] = new BCastThread[numPeers];
 		BCastExecuteThread bcet [] = new BCastExecuteThread[numPeers];
 		
-		assignTimestamp(r);
-		writeLog(id+" CLNT-REQ "+calendar.getTime()+" "+ r);
 		long ts = System.nanoTime();	
-		Ticket t = new Ticket(r.timestamp,id,r);
-		pq.add(t);
-		while(t!=pq.peek()){
-			try{
-				t.wait();
-			}catch(InterruptedException e){
-				e.printStackTrace();
+		
+		synchronized(pq){	
+			assignTimestamp(r);
+			Ticket t = new Ticket(r.timestamp,id,r);
+			
+			pq.add(t);
+			while(pq.size()!=0 && pq.peek().compareTo(t)!=0){
+				try{
+					pq.wait();
+				}catch(InterruptedException e){
+					e.printStackTrace();
+				}
 			}
 		}
-
+		writeLog(id+" CLNT-REQ "+calendar.getTime()+" "+ r);
 		int i =0 ;
-		
 		/*
 			Start Multiple Threads to Broadcast the Request to All Replicated Systems
 		*/
+		//System.out.println("Broadcasting "+r);
 		for ( i =0 ;i < numPeers ; i++){
 			if(i== id-1) continue;
 			bct[i]= new BCastThread(i,r,id); 
@@ -426,6 +430,9 @@ public class RMIServerImpl extends UnicastRemoteObject implements RMIServer , RM
 			setLamportClock(bct[i].getTimestamp());
 		}
 
+		//writeLog(id+" SERVER-ACK "+calendar.getTime()+" "+ r);
+		
+
 		/*
 			After Getting the Response from all other process, send the request to all otehr process for 
 
@@ -436,6 +443,7 @@ public class RMIServerImpl extends UnicastRemoteObject implements RMIServer , RM
 			bcet[i]= new BCastExecuteThread(i,r,id); 
 			bcet[i].start();
 		}
+
 		for ( i =0 ;i < numPeers ; i++){
 			if(i== id-1) continue;
 			try{
@@ -455,9 +463,7 @@ public class RMIServerImpl extends UnicastRemoteObject implements RMIServer , RM
 		return ret;
 
 	}
-	/*
-		Given a brodcasted request with the process id from which the requst came from, return an ack when this request has the smallest timestamp
-	*/
+	
 
 	public long requestBCast(Request r, int pid) throws RemoteException{
 		
@@ -468,26 +474,52 @@ public class RMIServerImpl extends UnicastRemoteObject implements RMIServer , RM
 			If there is currently no request in the local queue, simply ack
 			Otherwise, wait on the peek of the queue until you have a smaller timestamp, then return the lamportclock value
 		*/
-
-		if(pq.size()==0)
-			return tempClock;
-		else{
-			while(pq.peek().compareTo(t)<0){
-				System.out.println(r);
+		synchronized(pq){
+			while(pq.size()!=0 && pq.peek().compareTo(t)<0){
 				try{
-					pq.peek().wait();
+					//System.out.println("BCast Waiting " +r.timestamp);
+					pq.wait();
 				}catch(InterruptedException e){
 					e.printStackTrace();
 				}
 			}
 		}
-
+		writeLog(pid+" ACK-ING  "+calendar.getTime()+" "+r);
 		return tempClock;
 	}
+
+	class InitialThread extends Thread{
+		InitialThread(){
+
+		}
+		public void run(){
+			try{
+				NewAccountResponse resp =(NewAccountResponse) submitRequest(new NewAccountRequest("p","a","b"));
+				submitRequest(new DepositRequest(resp.accountId,1000));;
+			}catch(Exception e){
+				e.printStackTrace();
+			}
+		}
+	}
+	public void initialization(){
+		InitialThread its[] = new InitialThread[1000];
+		int i;
+			for(i=0;i<10;i++){
+				its[i] = new InitialThread();
+				its[i].start();
+			}
+			for(i=0;i<10;i++){
+				try{
+					its[i].join();
+				}catch(Exception e){
+					e.printStackTrace();
+				}
+	    }
+	   	System.out.println("End of Initialization");
+
+	}
 	public static void main (String args[]) throws Exception {
-		
 		accountManager = new AccountManager();
-	    //System.setSecurityManager (new RMISecurityManager ());
 	    server = new RMIServerImpl ();
 	    System.out.println("Before Binding");
 	    if(args.length != 2 ){
@@ -495,12 +527,14 @@ public class RMIServerImpl extends UnicastRemoteObject implements RMIServer , RM
 	    }else{
 	    	readFileByLine(args[0]);
 	    	server.id = Integer.parseInt(args[1]);
-	    	//System.out.println((peerInfo[id-1].split(":"))[1]);
 	       	Registry localRegistry = LocateRegistry.getRegistry(Integer.parseInt((peerInfo[Integer.parseInt(args[1])-1].split(":"))[1]));
 	       	localRegistry.bind ("RMIServer", server);	
 	    	localRegistry.bind ("RMIBroadcastServer", server);	
-	    	
 	    	server.buildPeerConnections();
+	    	
+	    	if(server.id==1){
+	    		server.initialization();
+	    	}
 	    	System.out.println("Server "+(id)+" waiting for request");
 	    }
   }
