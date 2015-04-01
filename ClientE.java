@@ -100,8 +100,10 @@ public class ClientE  extends Thread{
         for(i =0 ; i < numPeers ;i ++){
             clients[i].join();
         }
-        clients[0].server.submitRequest(new HaltRequest());
-
+        HaltRequest hr = new HaltRequest();
+        clients[0].writeLog(1+ " REQ "+calendar.getTime()+" "+hr);
+        HaltResponse hrr = (HaltResponse )clients[0].server.submitRequest(hr);
+        clients[0].writeLog(1+ " RSP "+calendar.getTime()+" "+hrr);
     }
 }
 
