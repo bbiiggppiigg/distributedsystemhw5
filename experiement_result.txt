@@ -1,0 +1,17 @@
+1 server 
+
+The average respone time for 120 requests is 1149866 nanoseconds.
+
+3 servers 
+
+The average respone time for 100 requests is 6554900 nanoseconds.
+The average respone time for 100 requests is 6572610 nanoseconds.
+The average respone time for 120 requests is 12455675 nanoseconds.
+
+5 servers
+
+The average respone time for 100 requests is 20691160 nanoseconds.
+The average respone time for 100 requests is 20138370 nanoseconds.
+The average respone time for 100 requests is 20753670 nanoseconds.
+The average respone time for 100 requests is 20368080 nanoseconds.
+The average respone time for 120 requests is 25559375 nanoseconds.
