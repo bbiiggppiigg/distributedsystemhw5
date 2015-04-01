@@ -49,10 +49,10 @@ public class ClientE  extends Thread{
        numPeers = Integer.parseInt(scanner.nextLine());
        peerInfo = new String [numPeers];
        int i = 0;
-       while (scanner.hasNextLine()) {
+       for(i=0;i<numPeers;i++){
             peerInfo[i]  = scanner.nextLine();  
-            i++;
        }
+
        scanner.close();
       } catch (FileNotFoundException e) {
        e.printStackTrace();
