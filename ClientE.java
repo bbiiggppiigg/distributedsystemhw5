@@ -60,13 +60,6 @@ public class ClientE  extends Thread{
     }
     public void run(){
 
-        /*Each client thread will perform the following operations 100 times and terminate.
-        􏰀 It will randomly pick two accounts and transfer 10 from one account to the other.
-        􏰀 It will write to the client logfile a record indicating the operation request and server process
-        ID.
-        ID “REQ” Physical-clock-time Operation-name Parameters
-        􏰀 It will also write a log record when a response is received. ID “RSP” Physical-clock-time Response status
-*/
         try{
             int i;
             Random rand = new Random();

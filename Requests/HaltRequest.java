@@ -4,6 +4,6 @@ public class HaltRequest extends Request{
 		super("Halt");
 	}
 	public String toString(){
-		return this.timestamp+" Halt";
+		return this.timestamp+" "+this.id+ " Halt";
 	}
 }

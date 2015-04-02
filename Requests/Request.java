@@ -7,10 +7,11 @@ public class Request implements Serializable{
 	public String requestType;
 	public boolean isBCast;
 	public long timestamp;
-	
+	public int id;
 	public Request(String type){
 		requestType = type;
 		timestamp = -1;
+		id = -1;
 	}
 	public String toString(){
 		switch(requestType){

@@ -12,6 +12,6 @@ public class NewAccountRequest extends Request{
 			this.address = address;
 		}
 		public String toString(){
-			return this.timestamp+" "+this.requestType + " Firstname = "+firstname+ "Lastname = "+lastname+" Address= "+address;
+			return this.timestamp+" "+this.id+" "+this.requestType + " Firstname = "+firstname+ "Lastname = "+lastname+" Address= "+address;
 		}
 };

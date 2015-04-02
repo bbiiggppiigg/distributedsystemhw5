@@ -8,6 +8,6 @@ public class GetBalanceRequest extends Request{
 			this.accountId = accountId;
 		}
 		public String toString(){
-			return this.timestamp+" "+this.requestType + " AccountId= "+accountId;
+			return this.timestamp+" "+this.id+" "+this.requestType + " AccountId= "+accountId;
 		}
 }; 

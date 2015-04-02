@@ -1,202 +1,202 @@
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 1 Target 7 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 1 Target 5 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 7 Target 8 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 2 Target 5 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 9 Target 6 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 1 Target 8 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 1 Target 10 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 4 Target 10 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 3 Target 6 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 3 Target 7 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 3 Target 5 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 1 Target 3 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 9 Target 2 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 1 Target 6 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 9 Target 3 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 9 Target 1 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 7 Target 3 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 5 Target 7 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 3 Target 6 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 4 Target 6 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 5 Target 4 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 6 Target 7 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 2 Target 4 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 10 Target 2 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 5 Target 1 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 10 Target 6 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 5 Target 7 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 8 Target 1 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 9 Target 6 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 7 Target 5 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 9 Target 6 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 5 Target 1 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 10 Target 1 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 8 Target 5 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 7 Target 2 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 1 Target 2 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 5 Target 2 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 3 Target 6 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 4 Target 5 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 7 Target 1 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 3 Target 9 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 4 Target 9 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 4 Target 6 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 1 Target 6 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 2 Target 9 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 9 Target 6 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 4 Target 10 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 3 Target 8 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 6 Target 1 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 1 Target 9 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 2 Target 5 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 6 Target 7 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 6 Target 1 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 5 Target 9 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 6 Target 4 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 2 Target 9 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 2 Target 5 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 9 Target 1 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 4 Target 6 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 7 Target 8 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 1 Target 4 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 9 Target 10 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 4 Target 6 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 6 Target 2 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 9 Target 7 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 3 Target 4 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 7 Target 2 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 7 Target 5 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 6 Target 1 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 10 Target 8 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 2 Target 4 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 1 Target 2 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 3 Target 4 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 1 Target 8 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 1 Target 5 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 5 Target 4 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 3 Target 1 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 7 Target 9 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 8 Target 10 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 7 Target 10 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 9 Target 8 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 7 Target 9 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 3 Target 7 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 1 Target 9 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 10 Target 1 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 4 Target 7 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 3 Target 4 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 2 Target 7 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 1 Target 4 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 10 Target 3 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 1 Target 8 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 8 Target 6 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 9 Target 6 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 10 Target 2 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 3 Target 2 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 7 Target 8 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 7 Target 6 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 10 Target 9 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 10 Target 7 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Transfer Source 7 Target 5 Amount 10
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Transfer status =  OK
-1 REQ Wed Apr 01 16:51:59 CDT 2015 -1 Halt
-1 RSP Wed Apr 01 16:51:59 CDT 2015 Halt status = Halt
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 9 Target 7 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 10 Target 4 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 4 Target 7 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 1 Target 7 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 6 Target 3 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 6 Target 8 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 3 Target 8 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 10 Target 3 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 2 Target 3 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 5 Target 2 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 3 Target 4 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 9 Target 3 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 6 Target 10 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 5 Target 8 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 6 Target 2 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 3 Target 8 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 8 Target 3 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 10 Target 7 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 8 Target 6 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 1 Target 5 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 9 Target 4 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 4 Target 9 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 7 Target 9 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 6 Target 9 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 6 Target 2 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 5 Target 1 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 4 Target 9 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 7 Target 5 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 3 Target 1 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 1 Target 3 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 6 Target 10 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 1 Target 2 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 3 Target 7 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 10 Target 5 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 7 Target 3 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 7 Target 5 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 9 Target 10 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 5 Target 3 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 6 Target 5 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 1 Target 2 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 7 Target 4 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 5 Target 3 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 2 Target 8 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 1 Target 4 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 10 Target 2 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 10 Target 4 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 1 Target 2 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 9 Target 5 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 2 Target 4 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 3 Target 8 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 6 Target 10 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 6 Target 2 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 10 Target 3 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 10 Target 2 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 2 Target 9 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 1 Target 6 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 3 Target 1 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 7 Target 5 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 3 Target 1 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 8 Target 7 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 8 Target 4 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 3 Target 7 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 2 Target 1 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 6 Target 9 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 2 Target 10 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 1 Target 10 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 7 Target 10 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 8 Target 7 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 10 Target 4 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 4 Target 9 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 3 Target 6 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 9 Target 4 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 10 Target 3 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 2 Target 10 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 10 Target 6 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 7 Target 9 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 7 Target 5 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 2 Target 3 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 5 Target 10 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 9 Target 3 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 7 Target 2 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 9 Target 1 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 4 Target 7 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 9 Target 5 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 5 Target 4 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 2 Target 10 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 2 Target 10 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 7 Target 3 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 2 Target 9 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 7 Target 5 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 2 Target 1 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 10 Target 8 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 8 Target 6 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 8 Target 6 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 6 Target 7 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 10 Target 7 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 7 Target 9 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 2 Target 7 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 2 Target 1 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Transfer Source 3 Target 9 Amount 10
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Transfer status =  OK
+1 REQ Wed Apr 01 22:35:02 CDT 2015 -1 -1 Halt
+1 RSP Wed Apr 01 22:35:02 CDT 2015 Halt status = Halt

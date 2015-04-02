@@ -1,3 +1,0 @@
-rm *.class
-rm logs/*
-

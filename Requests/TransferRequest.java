@@ -13,6 +13,6 @@ public class TransferRequest extends Request{
 			this.amount = amount;
 		}
 		public String toString(){
-			return this.timestamp+" "+this.requestType +" Source "+sourceId+" Target "+this.targetId+" Amount "+this.amount;
+			return this.timestamp+" "+this.id+" "+this.requestType +" Source "+sourceId+" Target "+this.targetId+" Amount "+this.amount;
 		}
 };

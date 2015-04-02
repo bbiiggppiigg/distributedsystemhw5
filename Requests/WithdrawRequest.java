@@ -11,6 +11,6 @@ public class WithdrawRequest extends Request{
 			this.amount = amount;	
 		}
 		public String toString(){
-			return this.timestamp+" "+this.requestType+" AccountId = "+ accountId +" Amount = "+amount;
+			return this.timestamp+" "+this.id+" "+this.requestType+" AccountId = "+ accountId +" Amount = "+amount;
 		}
 };
